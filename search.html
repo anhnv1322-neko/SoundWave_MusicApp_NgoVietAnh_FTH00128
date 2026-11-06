@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="SoundWave - nền tảng khám phá âm nhạc." name="description">
+        <title>
+            Tìm kiếm bài hát | SoundWave
+        </title>
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+    <body class="frame-content">
+        <main class="container">
+            <section class="page-top">
+                <div class="breadcrumb">
+                    <a href="home.html" target="contentFrame">
+                        Trang chủ
+                    </a>
+                    / Tìm kiếm
+                </div>
+                <div class="page-heading">
+                    <div>
+                        <div class="eyebrow">
+                            Search music
+                        </div>
+                        <h1>
+                            Tìm kiếm bài hát
+                        </h1>
+                        <p>
+                            Tìm ca khúc theo từ khóa, thể loại và năm phát hành.
+                        </p>
+                    </div>
+                </div>
+                <form class="filter-panel" id="searchForm" role="search">
+                    <div class="field">
+                        <label for="q">
+                            Từ khóa
+                        </label>
+                        <input
+                            id="q"
+                            name="q"
+                            placeholder="Tên bài hát, nghệ sĩ, tác giả hoặc album..."
+                            type="search"
+                            autocomplete="off">
+                    </div>
+                    <div class="field">
+                        <label for="genre">
+                            Thể loại
+                        </label>
+                        <select id="genre" name="genre">
+                            <option value="all">
+                                Tất cả thể loại
+                            </option>
+                            <option value="Indie Pop">
+                                Indie Pop
+                            </option>
+                            <option value="Lo-Fi">
+                                Lo-Fi
+                            </option>
+                            <option value="EDM">
+                                EDM
+                            </option>
+                            <option value="Acoustic">
+                                Acoustic
+                            </option>
+                            <option value="Alternative">
+                                Alternative
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="year">
+                            Năm phát hành
+                        </label>
+                        <select id="year" name="year">
+                            <option value="all">
+                                Tất cả năm
+                            </option>
+                            <option value="2026">
+                                2026
+                            </option>
+                            <option value="2025">
+                                2025
+                            </option>
+                            <option value="2024">
+                                2024
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="sort">
+                            Sắp xếp
+                        </label>
+                        <select id="sort" name="sort">
+                            <option value="newest">
+                                Mới nhất
+                            </option>
+                            <option value="plays">
+                                Nghe nhiều nhất
+                            </option>
+                        </select>
+                    </div>
+                    <div class="filter-actions">
+                        <button class="btn btn-ghost" id="resetSearch" type="button">
+                            Xóa bộ lọc
+                        </button>
+                    </div>
+                </form>
+                <p
+                    class="results-meta"
+                    id="resultsCount"
+                    aria-live="polite">
+                    Đang tải danh sách bài hát...
+                </p>
+                <div
+                    class="search-results"
+                    id="searchResults"
+                    aria-live="polite">
+                </div>
+                <noscript>
+                    <p class="notice">
+                        Vui lòng bật JavaScript để sử dụng chức năng tìm kiếm và bộ lọc bài hát.
+                    </p>
+                </noscript>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a class="brand" href="home.html" target="contentFrame">
+                            <span class="brand-mark">
+                                ♫
+                            </span>
+                            <span>sound<span>wave</span></span>
+                        </a>
+                        <p>
+                            Không gian khám phá âm nhạc và kết nối những tâm hồn cùng tần số.
+                        </p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>
+                            Khám phá
+                        </h4>
+                        <a href="search.html" target="contentFrame">
+                            Tìm kiếm bài hát
+                        </a>
+                        <a href="artist-songs.html" target="contentFrame">
+                            Nghệ sĩ
+                        </a>
+                        <a href="composer-songs.html" target="contentFrame">
+                            Tác giả
+                        </a>
+                        <a href="album-songs.html" target="contentFrame">
+                            Album
+                        </a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>
+                            SoundWave
+                        </h4>
+                        <a href="about.html" target="contentFrame">
+                            Về chúng tôi
+                        </a>
+                        <a href="detail.html" target="contentFrame">
+                            Tin tức
+                        </a>
+                        <a href="contact.html" target="contentFrame">
+                            Liên hệ
+                        </a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>
+                            Thông tin
+                        </h4>
+                        <a href="policy-terms.html" target="contentFrame">
+                            Chính sách và điều khoản
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>
+                        © 2026 SoundWave. Dự án giao diện minh họa.
+                    </span>
+                    <span>
+                        Made for music lovers ♫
+                    </span>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/js/search.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="SoundWave - nền tảng khám phá âm nhạc." name="description">
+        <title>
+            SoundWave - Nền tảng âm nhạc
+        </title>
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+    <body class="shell-body">
+        <header class="site-header shell-header">
+            <div class="container nav-wrap">
+                <a class="brand" href="home.html" target="contentFrame">
+                    <span class="brand-mark">
+                        ♫
+                    </span>
+                    <span>sound<span>wave</span></span>
+                </a>
+                <nav aria-label="Điều hướng chính" class="main-nav">
+                    <a href="home.html" target="contentFrame">
+                        Trang chủ
+                    </a>
+                    <a href="search.html" target="contentFrame">
+                        Tìm kiếm
+                    </a>
+                    <a href="song-detail.html" target="contentFrame">
+                        Bài hát
+                    </a>
+                    <a href="artist-songs.html" target="contentFrame">
+                        Ca sĩ
+                    </a>
+                    <a href="composer-songs.html" target="contentFrame">
+                        Tác giả
+                    </a>
+                    <a href="album-songs.html" target="contentFrame">
+                        Album
+                    </a>
+                    <a href="detail.html" target="contentFrame">
+                        Tin tức
+                    </a>
+                    <a href="about.html" target="contentFrame">
+                        Về chúng tôi
+                    </a>
+                    <a href="contact.html" target="contentFrame">
+                        Liên hệ
+                    </a>
+                    <a href="policy-terms.html" target="contentFrame">
+                        Điều khoản
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <main class="shell-main">
+            <iframe class="shell-frame" id="contentFrame" name="contentFrame" src="home.html" title="Nội dung website SoundWave">
+                Trình duyệt không hỗ trợ iframe.
+                <a href="home.html">
+                    Mở trang chủ SoundWave
+                </a>
+                .
+            </iframe>
+        </main>
+        <div class="static-player shell-player">
+            <div class="container">
+                <div class="player-track">
+                    <strong>
+                        Badders
+                    </strong>
+                    <small>
+                        Skrillex, PEEKABOO, Flowdan và G-Rex
+                    </small>
+                </div>
+                <audio aria-label="Trình phát nhạc Badders" class="audio-player" controls="" controlslist="nodownload" preload="metadata">
+                    <source src="sounddemo/badders.mp3" type="audio/mpeg">
+                    Trình duyệt của bạn không hỗ trợ phát âm thanh HTML5.
+                </audio>
+                <small class="player-hint">
+                    Nhạc tiếp tục phát khi chuyển trang
+                </small>
+            </div>
+        </div>
+    </body>
+</html>
